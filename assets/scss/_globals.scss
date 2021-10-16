@@ -34,3 +34,14 @@ body {
         align-self: center;
     }
 }
+
+.only-on-desktop {
+    @include breakpoint-down(desktop) {
+        display: none;
+    }
+}
+.only-on-mobile {
+    @include breakpoint-up(mobile) {
+        display: none;
+    }
+}

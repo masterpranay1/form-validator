@@ -69,4 +69,16 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
 }
+
+@media (max-width: 63.9375) {
+  .only-on-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 23.4375em) {
+  .only-on-mobile {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
