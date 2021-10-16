@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
 
     font-size: 16px;
+    font-family: var(--font-1);
 }
 
 .flex {
@@ -44,4 +45,40 @@ body {
     @include breakpoint-up(mobile) {
         display: none;
     }
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+}
+h3 {
+    font-weight: 300;
+    font-size: var(--sz-xxsm);
+    color: var(--clr-sec);
+    margin-top: .5em;
+}
+
+button, .button {
+    padding: 0.5em 1em;
+    border: 0;
+    outline: 0;
+
+    font-size: 1.5em;
+
+    background: var(--clr-pri);
+    color: var(--clr-white);
+    border-radius: 5px;
+
+    cursor: pointer;
+    @include breakpoint-down(tablet) {
+        font-size: 1.2em;
+    }
+}
+
+.mr-1em {
+    margin-right: 1em;
 }

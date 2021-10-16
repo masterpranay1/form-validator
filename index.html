@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="assets/dist/css/style.css">
-</head>
-<body>
-   
-</body>
+    <link rel="stylesheet" href="assets/dist/css/style.css" />
+  </head>
+  <body>
+    <header class="flex flex-row flex-jc-c flex-ai-c">
+      <h1>EdTech</h1>
+      <img src="assets/images/search.svg" alt="search icon" />
+      <button class="button header__button header_login">LogIn</button>
+      <button class="button header__button header__signup hide">SignUp</button>
+    </header>
+
+    <!-- form -->
+    <form class="form" action="#">
+      <h2>Sign Up to Your Account</h2>
+      <h3>
+        And Get Access to hundred of free tutorials over a wide variety of
+        topics.
+      </h3>
+      <div class="form__progress flex flex-row flex-ai-c">
+        <div class="circle circle-1"></div>
+        <div class="line line-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="line line-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="line line-3"></div>
+        <div class="circle circle-4"></div>
+      </div>
+      <div class="form__email">
+        <label for="email">Enter Email id:</label>
+        <input type="text" placeholder="Email" name="email" />
+        <p class="form__email__message">Field Required!!</p>
+      </div>
+
+      <div class="form__username hide">
+        <label for="username">Enter Username:</label>
+        <input type="text" placeholder="username" name="username" />
+      </div>
+
+      <div class="form__password hide">
+        <label for="password">Enter Password</label>
+        <input type="text" placeholder="password" name="password" />
+      </div>
+
+      <div class="form__confirm-password hide">
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="text"
+          placeholder="confirm-password"
+          name="confirm-password"
+        />
+      </div>
+
+      <div class="form__terms-and-condition hide">
+        <input type="checkbox" name="terms-and-condition" />
+        <label for="terms-and-condition"
+          >I have read all the terms and condition and willing to signup.</label
+        >
+      </div>
+      <button class="button form__button form__next mr-1em">Next</button>
+      <button class="button form__button form__prev hide">Prev</button>
+
+      <div class="separate flex flex-ai-c">
+          <div class="line"></div>
+          <h3>OR</h3>
+          <div class="line"></div>
+      </div>
+
+      <div class="options flex flex-row flex-jc-c">
+          <img src="assets/images/Vector.svg" alt="google icon">
+          <img src="assets/images/facebook.svg" alt="facebook icon">
+          <img src="assets/images/github.svg" alt="github icon">
+      </div>
+    </form>
+  </body>
 </html>

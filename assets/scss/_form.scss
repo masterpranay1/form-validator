@@ -1,0 +1,125 @@
+.form {
+  padding: 2em 6em;
+  // background: rgba(255, 192, 203, 0.322);
+  margin-top: 1em;
+
+  width: 60%;
+
+  > h2 {
+    font-size: var(--sz-l);
+  }
+  &__email {
+    display: grid;
+    grid-template-areas: "label label" "input message";
+    label {
+      grid-area: label;
+      font-size: var(--sz-xsm);
+      margin-bottom: 0.5em;
+    }
+    input {
+      grid-area: input;
+      border: 2px solid black;
+      outline: none;
+      user-select: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-size: var(--sz-xxsm);
+      text-align: left;
+    }
+    p {
+      grid-area: message;
+      font-size: 1.2em;
+      margin-left: 1em;
+      align-self: center;
+      color: rgba(255, 0, 0, 0.5);
+    }
+  }
+  &__button {
+    margin-top: 2em;
+  }
+  .separate {
+    margin-top: 3em;
+    .line {
+      width: 10em;
+      height: 0;
+      border-bottom: 2px solid #000;
+    }
+    h3 {
+      margin-top: 0;
+      margin: 0 1em;
+      font-weight: 700;
+    }
+  }
+  .options {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 24em;
+    img {
+      cursor: pointer;
+      border-radius: 1000px;
+    }
+    img:nth-child(2) {
+      margin: 0 1em;
+    }
+  }
+  @include breakpoint-down(tablet) {
+    width: 100%;
+    padding: 2em 4em;
+    > h2,
+    h3 {
+      text-align: center;
+    }
+    &__email {
+      grid-template-areas: "label" "input" "message";
+      label {
+        grid-area: label;
+      }
+      input {
+        grid-area: input;
+      }
+      p {
+        grid-area: message;
+        margin-left: 0;
+        margin-top: 1em;
+      }
+    }
+    .separate {
+        width: 100%;
+        justify-content: center;
+    }
+    .options {
+        width: 100%;
+        justify-content: center;
+    }
+  }
+  @include breakpoint-down(mobile) {
+      padding: 1em 1em;
+  }
+}
+
+.form .form__progress {
+  width: fit-content;
+  height: 1em;
+  margin: 3em 0;
+
+  .circle {
+    width: 1em;
+    height: 1em;
+
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .line {
+    width: 6em;
+    height: 0;
+
+    border: 1px solid black;
+  }
+  .circle-1 {
+    background: black;
+  }
+  @include breakpoint-down(tablet) {
+    width: 100%;
+    justify-content: center;
+  }
+}

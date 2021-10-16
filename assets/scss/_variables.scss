@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 :root {
 
     // different font sizes
@@ -6,12 +8,16 @@
     --sz-med : 2em;
     --sz-sm : 1.8em;
     --sz-xsm : 1.5em;
+    --sz-xxsm : 1.2em;
 
     // colors
     --clr-black : rgba(0 , 0, 0, 1);
     --clr-white : rgba(255, 255, 255, 1);
     --clr-pri : black;
-    --clr-sec : black;
+    --clr-sec : rgba(0, 0, 0, 0.7);
     --clr-ter : black;
     
+    // font family
+    --font-1 : 'Roboto', sans-serif;
+    --font-2 : 'Varela Round', sans-serif;
 }

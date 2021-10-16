@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    height: auto;
+    padding: 2em 6em;
+    // background: rgb(241, 217, 217);
+    > img {
+        margin-left: auto;
+    }
+    .#{&}__button {
+        margin-left: 1em;
+        padding: 0.5em 2em;
+    }
+    @include breakpoint-down(tablet) {
+        padding: 2em 4em;
+        .#{&}__button {
+            margin-left: .5em;
+            padding: 0.5em 1em;
+        }
+    }
+    @include breakpoint-down(mobile) {
+        padding: 1em 1em;
+    }
+}
