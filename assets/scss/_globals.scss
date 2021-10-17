@@ -1,84 +1,84 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 
-    font-size: 16px;
-    font-family: var(--font-1);
+  font-size: 16px;
+  font-family: var(--font-1);
+  background: linear-gradient(-70deg, #F4F9FE 43%, #e0d6fe 43%);
+  @include breakpoint-down(desktop) {
+      background: linear-gradient(-70deg, #F4F9FE , #e0d6fe);;
+  }
 }
 
 .flex {
-    display: flex;
-    &-row {
-        flex-direction: row;
-    }
-    &-col {
-        flex-direction: column;
-    }
-    &-jc-c {
-        justify-content: center;
-    }
-    &-jc-sb {
-        justify-content: space-between;
-    }
-    &-ai-c {
-        align-items: center;
-    }
-    &-as-c {
-        align-self: center;
-    }
-}
-
-.only-on-desktop {
-    @include breakpoint-down(desktop) {
-        display: none;
-    }
-}
-.only-on-mobile {
-    @include breakpoint-up(mobile) {
-        display: none;
-    }
+  display: flex;
+  &-row {
+    flex-direction: row;
+  }
+  &-col {
+    flex-direction: column;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+  &-as-c {
+    align-self: center;
+  }
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: 500;
+  font-size: 2em;
+  font-weight: 500;
 }
 h3 {
-    font-weight: 300;
-    font-size: var(--sz-xxsm);
-    color: var(--clr-sec);
-    margin-top: .5em;
+  font-weight: 300;
+  font-size: var(--sz-xxsm);
+  color: var(--clr-sec);
+  margin-top: 0.5em;
 }
 
-button, .button {
-    padding: 0.5em 1em;
-    border: 0;
-    outline: 0;
+button,
+.button {
+  padding: 0.5em 1em;
+  border: 0;
+  outline: 0;
 
-    font-size: 1.5em;
+  font-size: 1.5em;
 
-    background: var(--clr-pri);
-    color: var(--clr-white);
-    border-radius: 5px;
+  background: var(--clr-pri);
+  color: var(--clr-white);
+  border-radius: 5px;
 
-    cursor: pointer;
-    @include breakpoint-down(tablet) {
-        font-size: 1.2em;
-    }
+  cursor: pointer;
+  @include breakpoint-down(tablet) {
+    font-size: 1.2em;
+  }
 }
-
+a, .a {
+  text-decoration: none;
+  margin-left: 1em;
+}
+a, a:visited, a:active {
+  color: black;
+}
 .mr-1em {
-    margin-right: 1em;
+  margin-right: 1em;
 }

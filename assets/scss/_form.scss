@@ -8,9 +8,10 @@
   > h2 {
     font-size: var(--sz-l);
   }
-  &__email {
+  &__input {
     display: grid;
     grid-template-areas: "label label" "input message";
+    margin-top: 2em;
     label {
       grid-area: label;
       font-size: var(--sz-xsm);
@@ -34,11 +35,34 @@
       color: rgba(255, 0, 0, 0.5);
     }
   }
+  &__email {
+    display: grid;
+  }
+  &__username {
+    display: none;
+  }
+  &__password {
+    display: grid;
+  }
+  &__confirm-password {
+    display: none;
+  }
+  &__terms-and-condition {
+    margin-top: 4em;
+    input {
+      width: 2em;
+      height: 2em;
+    }
+    label {
+      font-size: var(--sz-xsm);
+      margin-left: 1em;
+    }
+  }
   &__button {
-    margin-top: 2em;
+    margin-top: 1em;
   }
   .separate {
-    margin-top: 3em;
+    margin-top: 2em;
     .line {
       width: 10em;
       height: 0;
@@ -55,6 +79,8 @@
     margin-bottom: 2em;
     width: 24em;
     img {
+      width: 3em;
+      height: 3em;
       cursor: pointer;
       border-radius: 1000px;
     }
@@ -62,9 +88,12 @@
       margin: 0 1em;
     }
   }
+  @include breakpoint-down(desktop) {
+    padding: 1em 2em;
+  }
   @include breakpoint-down(tablet) {
     width: 100%;
-    padding: 2em 4em;
+    padding: 1em 4em;
     > h2,
     h3 {
       text-align: center;
@@ -100,7 +129,8 @@
 .form .form__progress {
   width: fit-content;
   height: 1em;
-  margin: 3em 0;
+  margin-top: 3em;
+  margin-bottom: 1em;
 
   .circle {
     width: 1em;
@@ -116,6 +146,12 @@
     border: 1px solid black;
   }
   .circle-1 {
+    background: black;
+  }
+  .circle-2 {
+    background: black;
+  }
+  .circle-3 {
     background: black;
   }
   @include breakpoint-down(tablet) {

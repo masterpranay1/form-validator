@@ -1,0 +1,12 @@
+section.images {
+  width: 40%;
+  position: relative;
+  background: red;
+}
+
+section.images img {
+  width: 1em;
+  height: 1em;
+  background: red;
+}
+/*# sourceMappingURL=images.css.map */

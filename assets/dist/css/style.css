@@ -30,6 +30,13 @@ body {
   min-height: 100vh;
   font-size: 16px;
   font-family: var(--font-1);
+  background: linear-gradient(-70deg, #F4F9FE 43%, #e0d6fe 43%);
+}
+
+@media (max-width: 63.9375em) {
+  body {
+    background: linear-gradient(-70deg, #F4F9FE, #e0d6fe);
+  }
 }
 
 .flex {
@@ -76,18 +83,6 @@ body {
       align-self: center;
 }
 
-@media (max-width: 63.9375em) {
-  .only-on-desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 23.4375em) {
-  .only-on-mobile {
-    display: none;
-  }
-}
-
 .hide {
   display: none;
 }
@@ -101,10 +96,11 @@ h3 {
   font-weight: 300;
   font-size: var(--sz-xxsm);
   color: var(--clr-sec);
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
-button, .button {
+button,
+.button {
   padding: 0.5em 1em;
   border: 0;
   outline: 0;
@@ -116,9 +112,19 @@ button, .button {
 }
 
 @media (max-width: 47.9375em) {
-  button, .button {
+  button,
+  .button {
     font-size: 1.2em;
   }
+}
+
+a, .a {
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+a, a:visited, a:active {
+  color: black;
 }
 
 .mr-1em {
@@ -128,7 +134,7 @@ button, .button {
 header {
   width: 100%;
   height: auto;
-  padding: 2em 6em;
+  padding: 1em 6em;
 }
 
 header > img {
@@ -137,15 +143,22 @@ header > img {
 
 header .header__button {
   margin-left: 1em;
-  padding: 0.5em 2em;
+  padding: 0.4em 1em;
+  font-size: var(--sz-xxsm);
+}
+
+@media (max-width: 63.9375em) {
+  header {
+    padding: 1em 2em;
+  }
 }
 
 @media (max-width: 47.9375em) {
   header {
-    padding: 2em 4em;
+    padding: 1em 4em;
   }
   header .header__button {
-    margin-left: .5em;
+    margin-left: 0.5em;
     padding: 0.5em 1em;
   }
 }
@@ -166,13 +179,14 @@ header .header__button {
   font-size: var(--sz-l);
 }
 
-.form__email {
+.form__input {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "label label" "input message";
+  margin-top: 2em;
 }
 
-.form__email label {
+.form__input label {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -181,7 +195,7 @@ header .header__button {
   margin-bottom: 0.5em;
 }
 
-.form__email input {
+.form__input input {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: input;
@@ -197,7 +211,7 @@ header .header__button {
   text-align: left;
 }
 
-.form__email p {
+.form__input p {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: message;
@@ -209,12 +223,44 @@ header .header__button {
   color: rgba(255, 0, 0, 0.5);
 }
 
+.form__email {
+  display: -ms-grid;
+  display: grid;
+}
+
+.form__username {
+  display: none;
+}
+
+.form__password {
+  display: -ms-grid;
+  display: grid;
+}
+
+.form__confirm-password {
+  display: none;
+}
+
+.form__terms-and-condition {
+  margin-top: 4em;
+}
+
+.form__terms-and-condition input {
+  width: 2em;
+  height: 2em;
+}
+
+.form__terms-and-condition label {
+  font-size: var(--sz-xsm);
+  margin-left: 1em;
+}
+
 .form__button {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .form .separate {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .form .separate .line {
@@ -236,6 +282,8 @@ header .header__button {
 }
 
 .form .options img {
+  width: 3em;
+  height: 3em;
   cursor: pointer;
   border-radius: 1000px;
 }
@@ -244,10 +292,16 @@ header .header__button {
   margin: 0 1em;
 }
 
+@media (max-width: 63.9375em) {
+  .form {
+    padding: 1em 2em;
+  }
+}
+
 @media (max-width: 47.9375em) {
   .form {
     width: 100%;
-    padding: 2em 4em;
+    padding: 1em 4em;
   }
   .form > h2,
   .form h3 {
@@ -298,7 +352,8 @@ header .header__button {
   width: -moz-fit-content;
   width: fit-content;
   height: 1em;
-  margin: 3em 0;
+  margin-top: 3em;
+  margin-bottom: 1em;
 }
 
 .form .form__progress .circle {
@@ -318,12 +373,93 @@ header .header__button {
   background: black;
 }
 
+.form .form__progress .circle-2 {
+  background: black;
+}
+
+.form .form__progress .circle-3 {
+  background: black;
+}
+
 @media (max-width: 47.9375em) {
   .form .form__progress {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+section.images {
+  width: 40%;
+  position: relative;
+  padding: 2em 0;
+}
+
+section.images img {
+  width: 5em;
+  height: 5em;
+}
+
+section.images .autumn-trees {
+  position: absolute;
+  width: 15em;
+  height: 25em;
+  z-index: -1;
+  top: 10vmin;
+  left: 5vmin;
+}
+
+section.images .man-walking {
+  position: absolute;
+  width: 12em;
+  height: 30em;
+  left: 25vmin;
+  top: 10vmin;
+}
+
+section.images .plant-1 {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  top: 55vmin;
+}
+
+section.images .circle-bg {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  top: 20vmin;
+  left: 5vmin;
+}
+
+section.images .woman-writing {
+  position: absolute;
+  width: 10em;
+  height: 30em;
+  top: 15vmin;
+  left: 20vmin;
+}
+
+section.images .speech-modal {
+  position: absolute;
+  width: 15em;
+  height: 15em;
+  top: 15vmin;
+  left: -3vmin;
+}
+
+section.images .like-button {
+  position: absolute;
+  width: 20em;
+  height: 3em;
+  top: 20vmin;
+  left: 25vmin;
+}
+
+@media (max-width: 47.9375em) {
+  section.images {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

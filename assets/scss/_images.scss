@@ -1,0 +1,68 @@
+section.images {
+  width: 40%;
+  position: relative;
+  padding: 2em 0;
+  img {
+    width: 5em;
+    height: 5em;
+  }
+  .autumn-trees {
+    position: absolute;
+    width: 15em;
+    height: 25em;
+    z-index: -1;
+
+    top: 10vmin;
+    left: 5vmin;
+  }
+  .man-walking {
+    position: absolute;
+    width: 12em;
+    height: 30em;
+
+    left: 25vmin;
+    top: 10vmin;
+  }
+  .plant-1 {
+      position: absolute;
+      width: 10em;
+      height: 10em;
+
+      top: 55vmin;
+  }
+  .circle-bg {
+    position: absolute;
+    width: 20em;
+    height: 20em;
+
+    top: 20vmin;
+    left: 5vmin;
+  }
+  .woman-writing {
+    position: absolute;
+    width: 10em;
+    height: 30em;
+
+    top: 15vmin;
+    left: 20vmin;
+  }
+  .speech-modal {
+    position: absolute;
+    width: 15em;
+    height: 15em;
+
+    top: 15vmin;
+    left: -3vmin;
+  }
+  .like-button {
+    position: absolute;
+    width: 20em;
+    height: 3em;
+
+    top: 20vmin;
+    left: 25vmin;
+  }
+  @include breakpoint-down(tablet) {
+      display: none;
+  }
+}
