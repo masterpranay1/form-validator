@@ -98,7 +98,7 @@
     h3 {
       text-align: center;
     }
-    &__email {
+    &__input {
       grid-template-areas: "label" "input" "message";
       label {
         grid-area: label;

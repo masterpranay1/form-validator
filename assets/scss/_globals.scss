@@ -8,13 +8,14 @@
 
 body {
   width: 100%;
+  overflow-x: hidden;
   min-height: 100vh;
 
   font-size: 16px;
   font-family: var(--font-1);
   background: linear-gradient(-70deg, #F4F9FE 43%, #e0d6fe 43%);
   @include breakpoint-down(desktop) {
-      background: linear-gradient(-70deg, #F4F9FE , #e0d6fe);;
+      background: #e0d6fe; 
   }
 }
 

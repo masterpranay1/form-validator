@@ -12,13 +12,13 @@
     <header class="flex flex-row flex-jc-c flex-ai-c">
       <h1>EdTech</h1>
       <img src="assets/images/search.svg" alt="search icon" />
-      <button class="button header__button header_login hide">LogIn</button>
+      <button class="button header__button header__login hide">LogIn</button>
       <button class="button header__button header__signup">SignUp</button>
     </header>
 
     <section class="body__wrapper flex flex-row">
       <!-- form -->
-      <form class="form form__signup hide" action="#">
+      <form class="form form__signup hide">
         <h2>Sign Up to Your Account</h2>
         <h3>
           And Get Access to hundred of free tutorials over a wide variety of
@@ -36,17 +36,19 @@
         <div class="form__email form__input">
           <label for="email">Enter Email id:</label>
           <input type="text" placeholder="Email" name="email" />
-          <!-- <p class="form__email__message">Field Required!!</p> -->
+          <p class="form__email__message"></p>
         </div>
 
         <div class="form__username form__input">
           <label for="username">Enter Username:</label>
           <input type="text" placeholder="username" name="username" />
+          <p class="form__email__message"></p>
         </div>
 
         <div class="form__password form__input">
           <label for="password">Enter Password</label>
           <input type="text" placeholder="password" name="password" />
+          <p class="form__email__message"></p>
         </div>
 
         <div class="form__confirm-password form__input">
@@ -56,6 +58,7 @@
             placeholder="confirm-password"
             name="confirm-password"
           />
+          <p class="form__email__message"></p>
         </div>
 
         <div class="form__terms-and-condition flex flex-row flex-jc-c flex-ai-c">
@@ -64,10 +67,11 @@
             >I have read all the terms and condition and willing to
             signup.</label
           >
+          <p class="form__email__message"></p>
         </div>
-        <button class="button form__button form__next mr-1em">Next</button>
         <button class="button form__button form__prev">Prev</button>
-        <button class="button form__button form__signup">SignUp</button>
+        <button class="button form__button form__next mr-1em hide">Next</button>
+        <button class="button form__button form__signup__button hide">SignUp</button>
         <div class="separate flex flex-ai-c">
           <div class="line"></div>
           <h3>OR</h3>
@@ -87,21 +91,22 @@
         <img src="assets/images/plant-1.svg" alt="plant-1" class="plant-1"/>
       </section>
 
-      <form action="#" class="form form__signin">
-        <h2>Sign Up to Your Account</h2>
+      <form class="form form__signin">
+        <h2>Sign In to Your Account</h2>
         <h3>
           We Provide 100 of free Tutorials over a wide variety of topics 
         </h3>
         <div class="form__email form__input">
           <label for="email">Enter Email id:</label>
           <input type="text" placeholder="Email" name="email" />
-          <!-- <p class="form__email__message">Field Required!!</p> -->
+          <p class="form__email__message"></p>
         </div>
         <div class="form__password form__input">
           <label for="password">Enter Password</label>
           <input type="text" placeholder="password" name="password" />
+          <p class="form__email__message"></p>
         </div>
-        <button class="button form__button form__signin">SignIn</button>
+        <button class="button form__button form__signin__button">SignIn</button>
         <a href="#">Forgot Password</a>
         <div class="separate flex flex-ai-c">
           <div class="line"></div>
@@ -116,12 +121,13 @@
         </div>
       </form>
 
-      <section class="images images__signup">
+      <section class="images images__signin">
         <img src="assets/images/circle-bg.svg" alt="circle" class="circle-bg">
         <img src="assets/images/like-button.svg" alt="like button" class="like-button">
         <img src="assets/images/woman-writing.svg" alt="woman writing" class="woman-writing">
         <img src="assets/images/speech-modal-1.svg" alt="speech-modal-1" class="speech-modal">
       </section>
     </section>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -27,6 +27,7 @@
 
 body {
   width: 100%;
+  overflow-x: hidden;
   min-height: 100vh;
   font-size: 16px;
   font-family: var(--font-1);
@@ -35,7 +36,7 @@ body {
 
 @media (max-width: 63.9375em) {
   body {
-    background: linear-gradient(-70deg, #F4F9FE, #e0d6fe);
+    background: #e0d6fe;
   }
 }
 
@@ -307,20 +308,20 @@ header .header__button {
   .form h3 {
     text-align: center;
   }
-  .form__email {
+  .form__input {
         grid-template-areas: "label" "input" "message";
   }
-  .form__email label {
+  .form__input label {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: label;
   }
-  .form__email input {
+  .form__input input {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: input;
   }
-  .form__email p {
+  .form__input p {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: message;
