@@ -1,6 +1,7 @@
-# Form Validation
+# Form Validator
 
 A signup and signin web app using sass and js.
+(1st Project form the 20 Projects with Vanilla Javascript.)
 
 ## Tools Used
 
