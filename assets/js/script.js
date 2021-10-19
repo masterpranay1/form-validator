@@ -227,6 +227,7 @@ prevButton.addEventListener("click", (e) => {
 submitButtonSignup.addEventListener("click", e => {
     e.preventDefault();
     if(formTermsAndCondition.querySelector("input").checked) {
+        formTermsAndCondition.querySelector("p").textContent = "";
         CommonToggles();
         signupReset();
     } else {
