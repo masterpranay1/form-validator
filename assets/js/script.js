@@ -262,3 +262,8 @@ submitButtonSignin.addEventListener("click", e => {
         formPassword.querySelector("input").value = "";
     }
 });
+window.addEventListener('keydown', e => {
+  console.log(e.key);
+  if(e.key == 'Enter')
+    e.preventDefault();
+})
