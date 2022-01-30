@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Validator</title>
 
     <link rel="stylesheet" href="assets/dist/css/style.css" />
   </head>
@@ -35,19 +35,19 @@
         </div>
         <div class="form__email form__input">
           <label for="email">Enter Email id:</label>
-          <input type="text" placeholder="Email" name="email" />
+          <input type="text" placeholder="Email" name="email" autocomplete="off"/>
           <p class="form__email__message"></p>
         </div>
 
         <div class="form__username form__input">
           <label for="username">Enter Username:</label>
-          <input type="text" placeholder="username" name="username" />
+          <input type="text" placeholder="username" name="username" autocomplete="off"/>
           <p class="form__email__message"></p>
         </div>
 
         <div class="form__password form__input">
           <label for="password">Enter Password</label>
-          <input type="text" placeholder="password" name="password" />
+          <input type="text" placeholder="password" name="password" autocomplete="off"/>
           <p class="form__email__message"></p>
         </div>
 
@@ -57,12 +57,13 @@
             type="text"
             placeholder="confirm-password"
             name="confirm-password"
+            autocomplete="off"
           />
           <p class="form__email__message"></p>
         </div>
 
         <div class="form__terms-and-condition flex flex-row flex-jc-c flex-ai-c">
-          <input type="checkbox" name="terms-and-condition" />
+          <input type="checkbox" name="terms-and-condition" autocomplete="off"/>
           <label for="terms-and-condition"
             >I have read all the terms and condition and willing to
             signup.</label
@@ -98,12 +99,12 @@
         </h3>
         <div class="form__email form__input">
           <label for="email">Enter Email id:</label>
-          <input type="text" placeholder="Email" name="email" />
+          <input type="text" placeholder="Email" name="email" autocomplete="off"/>
           <p class="form__email__message"></p>
         </div>
         <div class="form__password form__input">
           <label for="password">Enter Password</label>
-          <input type="text" placeholder="password" name="password" />
+          <input type="text" placeholder="password" name="password" autocomplete="off"/>
           <p class="form__email__message"></p>
         </div>
         <button class="button form__button form__signin__button">SignIn</button>
